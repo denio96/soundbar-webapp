@@ -1,21 +1,7 @@
 import { useState } from "react";
 import playSound from "./utils/playSound";
 import "./App.css";
-
-const tracks = [
-  {
-    label: "Supersnajper",
-    file: `${import.meta.env.BASE_URL}/tracks/audioclip1.mp4`,
-  },
-  {
-    label: "Chciałbym się kiedyś obudzić",
-    file: `${import.meta.env.BASE_URL}/tracks/audioclip2.mp4`,
-  },
-  {
-    label: "Test local deploy",
-    file: `${import.meta.env.BASE_URL}/tracks/audioclip3.mp4`,
-  },
-];
+import tracks from "./utils/tracks";
 
 function App() {
   const [playing, setPlaying] = useState<string | null>(null);
